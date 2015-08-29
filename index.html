@@ -1,1 +1,73 @@
-Hello World again
+<!DOCTYPE html>
+<html lang='en-US' xml:lang='en-US' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>
+      Seeds - The Film
+    </title>
+    <meta content='Seeds - The Film' name='description'>
+    <meta content='Seeds' name='keywords'>
+    <meta content='Guillaume Fradin' name='author'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href="//vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="/assets/application.css" />
+  </head>
+  <body>
+    <div class='row'>
+      <div class='column small-12'>
+        <div class='text-center main_title'>
+          <h1>SEEDS</h1>
+          <h5>a feature film by Guillaume Fradin</h5>
+        </div>
+        <div class='parent-vertical-centering'>
+          <div class='slick-carousel'>
+            <img alt="NASA Shelter Concept Art" src="/assets/concepts/shelter/shelter.large.b.01.jpg" />
+            <img alt="NASA Shelter Concept Art" src="/assets/concepts/shelter/shelter.large.b.02.jpg" />
+            <img alt="NASA Shelter Concept Art" src="/assets/concepts/shelter/shelter.large.b.03.jpg" />
+            <img alt="NASA Shelter Concept Art" src="/assets/concepts/shelter/shelter.large.b.04.jpg" />
+          </div>
+        </div>
+        <div class='text-center actions'>
+          <a class='button tiny radius' id='video_opener'>
+            <h4>
+              <i class='fi-play-circle'></i>
+              Watch Teaser
+            </h4>
+          </a>
+        </div>
+        <div aria-hidden='true' aria-labelledby='modalTitle' class='reveal-modal full' data-reveal id='video_modal' role='dialog'>
+          <div class='text-right'>
+            <div class='modal_closer'>close</div>
+          </div>
+          <video controls="controls" preload="auto" width="1280" height="720" data-setup="" class="video-js vjs-default-skin" id="concept_video" src="/assets/concept.mp4"></video>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='column small-12'>
+        <div class='footer'>
+          <span class='email' data-name='seeds'></span>
+        </div>
+        
+        
+        <script type="text/javascript">
+        var _gauges = _gauges || [];
+        (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '55e1c965de2e262ca400f05a');
+        t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+        t.src = 'https://track.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+        })();
+        </script>
+        <script src="/assets/vendor/modernizr.js"></script>
+        <script src="/assets/application.js"></script>
+        <script src="//vjs.zencdn.net/4.12/video.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
