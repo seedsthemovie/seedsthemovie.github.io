@@ -4947,7 +4947,7 @@ body {
 }
 
 /* line 17, /home/frading/work/web/films/seeds/rails/seeds/app/assets/stylesheets/main.sass */
-h1, h2, h3, h4, h5, h6, .modal_closer, .footer {
+h1, h2, h3, h4, h5, h6, .modal_closer, .footer, .actions {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: #ddd !important;
@@ -4967,14 +4967,15 @@ h1, h2, h3, h4, h5, h6, .modal_closer, .footer {
 /* line 31, /home/frading/work/web/films/seeds/rails/seeds/app/assets/stylesheets/main.sass */
 .actions {
   margin-top: 60px;
+  text-align: center;
 }
 
-/* line 34, /home/frading/work/web/films/seeds/rails/seeds/app/assets/stylesheets/main.sass */
+/* line 35, /home/frading/work/web/films/seeds/rails/seeds/app/assets/stylesheets/main.sass */
 #concept_video {
   width: 100% !important;
 }
 
-/* line 38, /home/frading/work/web/films/seeds/rails/seeds/app/assets/stylesheets/main.sass */
+/* line 39, /home/frading/work/web/films/seeds/rails/seeds/app/assets/stylesheets/main.sass */
 .footer {
   margin-top: 40px;
   padding: 10px;
