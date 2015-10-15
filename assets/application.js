@@ -15655,6 +15655,60 @@ return jQuery;
 
 }).call(this);
 (function() {
+  var carousel, carousel_index, images_list, load_carousel, set_carousel_index, set_next, set_prev;
+
+  carousel = function() {
+    return $('.custom_carousel');
+  };
+
+  images_list = function() {
+    return carousel().data('list');
+  };
+
+  carousel_index = function() {
+    return carousel().data('index');
+  };
+
+  load_carousel = function() {
+    return set_carousel_index(carousel_index());
+  };
+
+  set_carousel_index = function(index) {
+    carousel()[0].src = images_list()[index];
+    return carousel().data('index', index);
+  };
+
+  set_prev = function() {
+    var index;
+    index = (carousel_index() - 1) % (images_list().length);
+    if (index < 0) {
+      index = images_list().length - 1;
+    }
+    return set_carousel_index(index);
+  };
+
+  set_next = function() {
+    var index;
+    index = (carousel_index() + 1) % (images_list().length);
+    return set_carousel_index(index);
+  };
+
+  $(document).ready(function() {
+    load_carousel();
+    return $('.background-control').on('click', function() {
+      var e;
+      e = $(this);
+      if (e.hasClass('next')) {
+        set_next();
+      }
+      if (e.hasClass('prev')) {
+        return set_prev();
+      }
+    });
+  });
+
+}).call(this);
+(function() {
   $(document).ready(function() {
     var e, i, len, name, ref, results;
     ref = $('.email');
