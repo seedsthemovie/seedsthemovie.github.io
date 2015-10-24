@@ -4963,15 +4963,20 @@ h1, h2, h3, h4, h5, h6, .modal_closer, .footer, .actions {
 .main_title {
   margin-bottom: 20px;
 }
-
 /* line 30, /home/frading/work/web/films/seeds/src/rails/app/assets/stylesheets/main.sass */
+.main_title .logline {
+  margin-left: auto;
+  max-width: 500px;
+}
+
+/* line 34, /home/frading/work/web/films/seeds/src/rails/app/assets/stylesheets/main.sass */
 .credentials {
   border-top: 1px solid #333;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-/* line 37, /home/frading/work/web/films/seeds/src/rails/app/assets/stylesheets/main.sass */
+/* line 41, /home/frading/work/web/films/seeds/src/rails/app/assets/stylesheets/main.sass */
 .actions-parent {
   position: absolute;
   top: -1px;
@@ -4980,7 +4985,7 @@ h1, h2, h3, h4, h5, h6, .modal_closer, .footer, .actions {
   padding: 0px 50px;
 }
 
-/* line 44, /home/frading/work/web/films/seeds/src/rails/app/assets/stylesheets/main.sass */
+/* line 48, /home/frading/work/web/films/seeds/src/rails/app/assets/stylesheets/main.sass */
 .gradient {
   background: -webkit-linear-gradient(top, transparent, black);
   background: -o-linear-gradient(top, transparent, black);
@@ -4988,24 +4993,24 @@ h1, h2, h3, h4, h5, h6, .modal_closer, .footer, .actions {
   background: linear-gradient(to top, transparent, black);
 }
 
-/* line 50, /home/frading/work/web/films/seeds/src/rails/app/assets/stylesheets/main.sass */
+/* line 54, /home/frading/work/web/films/seeds/src/rails/app/assets/stylesheets/main.sass */
 #concept_video {
   width: 100% !important;
 }
 
-/* line 53, /home/frading/work/web/films/seeds/src/rails/app/assets/stylesheets/main.sass */
+/* line 57, /home/frading/work/web/films/seeds/src/rails/app/assets/stylesheets/main.sass */
 .full-screen-background {
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-/* line 58, /home/frading/work/web/films/seeds/src/rails/app/assets/stylesheets/main.sass */
+/* line 62, /home/frading/work/web/films/seeds/src/rails/app/assets/stylesheets/main.sass */
 .vertical-centered-parent {
   position: relative;
   height: 100%;
 }
-/* line 61, /home/frading/work/web/films/seeds/src/rails/app/assets/stylesheets/main.sass */
+/* line 65, /home/frading/work/web/films/seeds/src/rails/app/assets/stylesheets/main.sass */
 .vertical-centered-parent .vertical-centered {
   position: absolute;
   width: 100%;
@@ -5013,21 +5018,16 @@ h1, h2, h3, h4, h5, h6, .modal_closer, .footer, .actions {
   transform: translateY(-50%);
 }
 
-/* line 67, /home/frading/work/web/films/seeds/src/rails/app/assets/stylesheets/main.sass */
-.img.custom_carousel {
-  position: relative;
-}
-
 /* line 71, /home/frading/work/web/films/seeds/src/rails/app/assets/stylesheets/main.sass */
-.background-control {
-  font-size: 60px;
-  padding: 10px;
-  display: inline-block;
+.custom_carousel {
   position: relative;
-  top: 12px;
+}
+/* line 73, /home/frading/work/web/films/seeds/src/rails/app/assets/stylesheets/main.sass */
+.custom_carousel .carousel_image {
+  display: none;
 }
 
-/* line 78, /home/frading/work/web/films/seeds/src/rails/app/assets/stylesheets/main.sass */
+/* line 84, /home/frading/work/web/films/seeds/src/rails/app/assets/stylesheets/main.sass */
 .footer {
   margin-top: 40px;
   padding: 10px;
